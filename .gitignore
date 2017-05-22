@@ -185,7 +185,6 @@ vendor/
 
 /dist
 /build
-/bin
 
 TESTS.xml
 *.tmp.txt
