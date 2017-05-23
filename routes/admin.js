@@ -9,6 +9,7 @@ function init() {
     var router = express.Router();
         
     router.post('/', function(req, res, next) {
+        console.log(req.body);
          Bucket.find({friendlyName:req.body.friendlyName}).exec(function (err,results) {
             if (err) {
                 res.status(500).send(err);
